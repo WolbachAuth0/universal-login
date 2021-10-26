@@ -1,0 +1,12 @@
+
+# don't commit files that have secrets in them
+/tenant/tenant.yaml
+/tenant/hooli-waad.json
+/tenant/apple.json
+
+.env
+.env.*
+
+/node_modules
+
+.DS_Store

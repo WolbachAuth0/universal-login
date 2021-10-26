@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    Liquid Syntax
+    https://shopify.github.io/liquid/basics/introduction/
+  -->
+  <head>
+    {%- auth0:head -%}
+    <style>
+      @media (min-aspect-ratio: 16/9) {
+        .video-container iframe {
+          /* height = 100 * (9 / 16) = 56.25 */
+          height: 56.25vw;
+        }
+      }
+          
+      @media (max-aspect-ratio: 16/9) {
+        .video-container iframe {
+          /* width = 100 / (9 / 16) = 177.777777 */
+          width: 177.78vh;
+        }
+      }
+
+      .video-container {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: black;
+        pointer-events: none;
+      }
+      
+      .header {
+        width: 100%;
+        height: 30px;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background: black;
+      }
+
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height:30px;
+        background-color: black;
+      }
+
+      iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 100vh;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body class="_widget-auto-layout">
+    <!-- Reference: https://developers.google.com/youtube/player_parameters#Manual_IFrame_Embeds-->
+    <div class="header"></div>
+    <div class="video-container">
+      <iframe src="https://www.youtube-nocookie.com/embed/8naxjlqG6y0?playlist=8naxjlqG6y0&showinfo=0&start=25&end=68&controls=0&autoplay=1&mute=1&loop=1"></iframe>
+    </div>
+    <div class="footer"></div>
+    {%- auth0:widget -%}
+  </body>
+</html>
