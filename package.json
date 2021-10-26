@@ -4,7 +4,10 @@
   "description": "A collection of node.js scripts used by N.A. Corporate SE's for demonstration / working purposes.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "get:universal-login": "node ./tasks/universal-login/get.js",
+    "set:universal-login": "node ./tasks/universal-login/set.js",
+    "reset:universal-login": "node ./tasks/universal-login/reset.js",
+    "find:users": "node ./tasks/users/find.js"
   },
   "repository": {
     "type": "git",
