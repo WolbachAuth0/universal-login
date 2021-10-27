@@ -84,7 +84,7 @@ These are the scripts that search for, update and add users to Auth0. In order t
 
 * read:users
 * read:user_idp_tokens
-* bcreate:users
+* create:users
 
 ##### Find User(s) by Email
 Get an array of users in the Auth0 tenant which are associated to the email address passed into the command.
