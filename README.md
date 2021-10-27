@@ -89,9 +89,14 @@ These are the scripts that search for, update and add users to Auth0. In order t
 ##### Find User(s) by Email
 Get an array of users in the Auth0 tenant which are associated to the email address passed into the command.
 ```bash
-npm run find:users email=aaron.wolbach@gmail.com
+npm run find:users email="aaron.wolbach@gmail.com"
 ```
 
+##### Find User by ID
+Get the user the Auth0 tenant which is associated to the user_id passed into the command.
+```bash
+npm run find:users id="auth0|YWFyb24ud29sYmFjaEBnbWFpbC5jb200d29sYmFjaC0zNDY4"
+```
 
 ## Acknowledgements
  - [Auth0 Deploy CLI Documentation](https://auth0.com/docs/deploy/deploy-cli-tool/install-and-configure-the-deploy-cli-tool)
