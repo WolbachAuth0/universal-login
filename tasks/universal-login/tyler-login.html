@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    Liquid Syntax
+    https://shopify.github.io/liquid/basics/introduction/
+  -->
+  <head>
+    {%- auth0:head -%}
+    <style>
+
+      video#string-theory {
+        z-index: -1;
+        left: 0%;
+        top: 50%;
+        position: fixed;
+        transform: translate(-50%,-50%);
+        max-width: 100%;
+      }
+      
+      .header {
+        width: 100%;
+        height: 30px;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background: black;
+      }
+
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height:30px;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body class="_widget-auto-layout">
+    <!-- Reference: https://developers.google.com/youtube/player_parameters#Manual_IFrame_Embeds-->
+    <div class="header"></div>
+
+    <video playsinline autoplay muted loop id="string-theory"><source src="https://portal.synthesis.is/stringtheory_loop.mov" type="video/mp4"></video>
+    
+    <div class="footer"></div>
+    
+    {%- auth0:widget -%}
+    
+  </body>
+</html>

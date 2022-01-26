@@ -3,8 +3,9 @@ const path = require('path')
 const scopes = [
   'update:branding',
 ]
+
 const management = require('./../get-management-client')(scopes)
-const filename = path.join(__dirname, 'universal-login.html')
+const filename = path.join(__dirname, 'tyler-login.html')
 set(filename)
 
 async function set(filename) {
