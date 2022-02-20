@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {%- auth0:head -%}
+    <style>
+      img.login__triangle {
+        -webkit-text-size-adjust: 100%;
+        color: #3f3e3d;
+        font: 400 14px/1.85 Ariel,Helvetica,sans-serif;
+        font-family: Ariel,Helvetica,sans-serif;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        box-sizing: inherit;
+        border-style: none;
+        display: block;
+        height: auto;
+        max-height: 100%;
+        max-width: 55%;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        bottom: 0;
+      }
+
+      img.login__triangle.login__triangle-top {
+        color: #7f7d7a;
+      }
+
+      img.login__triangle login__triangle-bottom {
+        color: #bfbbb5;
+      }
+    </style>
+  </head>
+  <body class="_widget-auto-layout">
+    <img class="login__triangle login__triangle-top" src="https://teamcovenant.com/wp-content/themes/covenant/images/triangle-top.png" alt="">
+    {%- auth0:widget -%}
+    <img class="login__triangle login__triangle-bottom" src="https://teamcovenant.com/wp-content/themes/covenant/images/triangle-bottom.png" alt="">
+  </body>
+</html>

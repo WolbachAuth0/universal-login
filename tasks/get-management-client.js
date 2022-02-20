@@ -1,4 +1,7 @@
 const path = require('path')
+
+
+// TODO: Prompt user to choose tenant. Then load the associate .env file.
 console.log(`Reading environment from .env.dev ...`)
 require('dotenv').config({ path: path.join(__dirname, `./../.env.dev`) })
 
