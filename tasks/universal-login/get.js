@@ -5,7 +5,7 @@ const management = require('./../get-management-client')(scopes)
 get()
 
 async function get() {
-  console.log('fetching new universal login settings and template ...')
+  console.log('fetching new universal login settings and template ...\n')
   try {
     const settings = await management.getBrandingSettings()
     console.log(settings)
@@ -13,10 +13,10 @@ async function get() {
     console.log('error while getting new universal login settings.')
     console.error(err)
   }
-
+  console.log('')
   try {
     const template = await management.getBrandingUniversalLoginTemplate()
-    console.log(template)
+    console.log(template.body)
   } catch (err) {
     
     if (err?.statusCode == 404) {

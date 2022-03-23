@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {%- auth0:head -%}
+</head>
+
+<body class="_widget-auto-layout">
+  <div id="shopify-section-header" class="shopify-section">
+    <style>
+      .site-header__logo-image {
+        max-width: 195px;
+      }
+    </style>
+    <style>
+      .announcement-bar {
+        background-color: #b59049;
+      }
+
+      .announcement-bar--link:hover {
+        background-color: #bf9f61;
+      }
+
+      .announcement-bar__message {
+        color: #ffffff;
+      }
+    </style>
+    <div data-section-id="header" data-section-type="header-section">
+      <div class="announcement-bar-content">
+        <a href="#"
+          class="announcement-bar first announcement-bar--link">
+          <p class="announcement-bar__message">Save $25 Off $150+ | Save $50 Off $250+ | Save $100 Off $500+ | Use Code:
+            PRESIDENTSDAY</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  {%- auth0:widget -%}
+</body>
+
+</html>
