@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const inquirer = require('inquirer')
-const schemes = require('./schemes')
+const themes = require('./themes')
 const management = require('./../../lib/get-management-client')
 
 const scopes = [ 'update:branding' ]
@@ -10,7 +10,7 @@ const prompts = [
     type: 'list',
     name: 'theme',
     message: 'Select the Universal Login theme:',
-    choices: schemes.map(scheme => scheme.name),
+    choices: themes.map(scheme => scheme.name),
   }
 ]
 
@@ -21,7 +21,7 @@ async function setUniversalLogin() {
     const api = await management(scopes)
     const answers = await inquirer.prompt(prompts)
 
-    const directory = schemes.find(scheme => scheme.name == answers.theme).path
+    const directory = themes.find(scheme => scheme.name == answers.theme).path
     const filename = path.join(directory, `template.html`)
     const branding = path.join(directory, `branding.json`)
     console.log(`\nsetting new universal login html template from ${filename}\n`)
