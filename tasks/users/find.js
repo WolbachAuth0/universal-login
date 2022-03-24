@@ -2,11 +2,28 @@ const scopes = [
   'read:users',
   'read:user_idp_tokens',
 ]
-const management = require('./../get-management-client')(scopes)
+const management = require('./../get-management-client')
 
 const args = process.argv.slice(2)
 const emailRE = /^email=(.*)$/
 const idRE = /^id=(.*)$/
+
+findUser()
+
+async function findUser() {
+  const scopes = [
+    'read:users',
+    'read:user_idp_tokens',
+  ]
+  
+  try {
+    const api = await management(scopes)
+    
+  } catch (error) {
+    
+  }
+}
+
 
 if ( !args.length > 0 || !args.some(x => x.match(emailRE) || x.match(idRE)) ) {
   console.log('must include an email or an id parameter. example ...')
