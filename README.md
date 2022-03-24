@@ -60,8 +60,31 @@ Updates the HTML template for the new universal login.
 npm run set:universal-login
 ```
 
-NOTE: Before you run this command, you can create 
+NOTE: To create your own login screen, create a new folder in the `./tasks/themes` directory. Then create a `template.html` file and a `branding.json` file and add them to your new theme directory. For the html template, use the [liquid syntax](https://shopify.github.io/liquid/basics/introduction/). See the [documentation](https://auth0.com/docs/brand-and-customize/universal-login-page-templates). For example,
 
+`template.html`
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    {%- auth0:head -%}
+  </head>
+  <body class="_widget-auto-layout">
+    {%- auth0:widget -%}
+  </body>
+</html>
+```
+
+`branding.json`
+```json
+{
+  "colors": {
+    "primary": "#202A5E",
+    "page_background": "#FFFFFF"
+  },
+  "logo_url": "https://www.medacist.com/wp-content/themes/medacist/slice/dist/images/logo.svg"
+}
+```
 
 ##### Delete Branding
 Delete the existing html template for the new universal login.
