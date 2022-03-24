@@ -54,12 +54,14 @@ npm run get:universal-login
 ```
 
 ##### Update Branding
-Updates the HTML template for the new universal login. 
+Updates the HTML template for the new universal login.
 
-Be sure to create a new .html file in the /tasks directory containing the desired HTML template. Use the [liquid syntax](https://shopify.github.io/liquid/basics/introduction/) in your template. See the [documentation](https://auth0.com/docs/brand-and-customize/universal-login-page-templates) to be sure you include the required Auth0 login widget.
 ```bash
 npm run set:universal-login
 ```
+
+NOTE: Before you run this command, you can create 
+
 
 ##### Delete Branding
 Delete the existing html template for the new universal login.

@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const management = require('./../../lib/get-management-client')
-const schemes = require('./schemes')
+const themes = require('./themes')
 
 reset()
 
@@ -10,7 +10,7 @@ async function reset() {
   try {
     const api = await management(scopes)
 
-    const directory = schemes.find(scheme => scheme.name == 'default').path
+    const directory = themes.find(scheme => scheme.name == 'default').path
     const filename = path.join(directory, `template.html`)
     const branding = path.join(directory, `branding.json`)
     console.log(`\nsetting new universal login html template from ${filename}\n`)
