@@ -18,10 +18,8 @@ setUniversalLogin()
 
 async function setUniversalLogin() {
   try {
-    const client = await management(scopes)
+    const api = await management(scopes)
     const answers = await inquirer.prompt(prompts)
-    // console.log(answers)
-    // console.log(schemes)
 
     const directory = schemes.find(scheme => scheme.name == answers.theme).path
     const filename = path.join(directory, `template.html`)
@@ -34,11 +32,11 @@ async function setUniversalLogin() {
     template = buffer.toString()
     const json = JSON.stringify({ template })
     const params = {}
-    const response = await client.setBrandingUniversalLoginTemplate(params, json)
+    const response = await api.setBrandingUniversalLoginTemplate(params, json)
     console.log('successfully set html', response)
 
     // set the branding (colors and logo)
-    const updateBranding = await client.updateBrandingSettings(params, require(branding))
+    const updateBranding = await api.updateBrandingSettings(params, require(branding))
     console.log('success updated branding')
     console.log(updateBranding)
   } catch (error) {

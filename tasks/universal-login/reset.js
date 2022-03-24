@@ -1,32 +1,35 @@
-const scopes = [
-  'delete:branding',
-  'update:branding',
-]
-const management = require('./../get-management-client')(scopes)
-
-// The Travel0 default scheme
-const defaultBranding = {
-  colors: {
-    primary: '#03C07B',
-    page_background: '#03C07B'
-  },
-  logo_url: 'https://d2qcgv1x1k2it7.cloudfront.net/icons/logo/travel0-green.svg'
-}
-
-// Management API SDK documentation
-// https://auth0.github.io/node-auth0/
+const fs = require('fs')
+const path = require('path')
+const management = require('./../../lib/get-management-client')
+const schemes = require('./schemes')
 
 reset()
 
 async function reset() {
-  console.log('resetting new universal login html template ...')
+  const scopes = [ 'update:branding', 'delete:branding' ]
   try {
-    const response = await management.deleteBrandingUniversalLoginTemplate()
-    const updateResponse = await management.updateBrandingSettings({}, defaultBranding)
-    console.log('success')
-    console.log(updateResponse)
-  } catch (err) {
-    console.log('error while deleting new universal login template.')
-    console.error(err)
+    const api = await management(scopes)
+
+    const directory = schemes.find(scheme => scheme.name == 'default').path
+    const filename = path.join(directory, `template.html`)
+    const branding = path.join(directory, `branding.json`)
+    console.log(`\nsetting new universal login html template from ${filename}\n`)
+
+    // read the HTML template into a string, and create a JSON body from the HTML template
+    let template   
+    const buffer = fs.readFileSync(filename)
+    template = buffer.toString()
+    const json = JSON.stringify({ template })
+    const params = {}
+    const response = await api.setBrandingUniversalLoginTemplate(params, json)
+    console.log('successfully set html', response)
+
+    // set the branding (colors and logo)
+    const updateBranding = await api.updateBrandingSettings(params, require(branding))
+    console.log('success updated branding')
+    console.log(updateBranding)
+  } catch (error) {
+    console.log('error while updating new universal login.')
+    console.error(error)
   }
 }
