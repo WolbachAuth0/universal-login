@@ -1,8 +1,8 @@
 
-# don't commit files that have secrets in them
-/tenant/tenant.yaml
-/tenant/hooli-waad.json
-/tenant/apple.json
+# don't commit your tenant folders
+/tenants/*
+# but DO commit the tenant index.js file
+!/tenants/index.js
 
 .env
 .env.*

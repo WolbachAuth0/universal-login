@@ -1,45 +1,51 @@
 const fs = require('fs')
 const path = require('path')
-const scopes = [
-  'update:branding',
-]
-const management = require('./../get-management-client')(scopes)
-const Select = require('../../lib/Select')
+const inquirer = require('inquirer')
 const schemes = require('./schemes')
+const management = require('./../../lib/get-management-client')
 
-const schemeSelect = new Select({
-  question: 'Select the universal login theme from the available templates:',
-  options: schemes.map(scheme => scheme.name),
-  answers: schemes.map(scheme => scheme.path),
-  pointer: '>',
-  color: 'blue',
-  callback: set
-})
-schemeSelect.start()
+const scopes = [ 'update:branding' ]
+const prompts = [
+  {
+    type: 'list',
+    name: 'theme',
+    message: 'Select the Universal Login theme:',
+    choices: schemes.map(scheme => scheme.name),
+  }
+]
 
-// Management API SDK documentation
-// https://auth0.github.io/node-auth0/
+setUniversalLogin()
 
-async function set(scheme) {
-  const filename = path.join(scheme, `template.html`)
-  const branding = path.join(scheme, `branding.json`)
-
-  console.log(`\nsetting new universal login html template from ${filename}\n`)
+async function setUniversalLogin() {
   try {
+    const client = await management(scopes)
+    const answers = await inquirer.prompt(prompts)
+    // console.log(answers)
+    // console.log(schemes)
+
+    const directory = schemes.find(scheme => scheme.name == answers.theme).path
+    const filename = path.join(directory, `template.html`)
+    const branding = path.join(directory, `branding.json`)
+    console.log(`\nsetting new universal login html template from ${filename}\n`)
+
+    // read the HTML template into a string, and create a JSON body from the HTML template
     let template   
     const buffer = fs.readFileSync(filename)
     template = buffer.toString()
-    
     const json = JSON.stringify({ template })
     const params = {}
-    const response = await management.setBrandingUniversalLoginTemplate(params, json)
+    const response = await client.setBrandingUniversalLoginTemplate(params, json)
     console.log('successfully set html', response)
 
-    const updateBranding = await management.updateBrandingSettings(params, require(branding))
+    // set the branding (colors and logo)
+    const updateBranding = await client.updateBrandingSettings(params, require(branding))
     console.log('success updated branding')
     console.log(updateBranding)
-  } catch (err) {
+  } catch (error) {
     console.log('error while updating new universal login.')
-    console.error(err)
+    console.error(error)
   }
 }
+
+
+    
