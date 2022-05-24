@@ -57,6 +57,3 @@ async function setUniversalLogin() {
     console.error(error)
   }
 }
-
-
-    
