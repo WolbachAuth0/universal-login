@@ -23,19 +23,26 @@ async function setPrompts() {
 
     const directory = themes.find(scheme => scheme.name == answers.theme).path
     const prompttext = path.join(directory, `prompts.json`)
+    const data = require(prompttext)
+    const keys = Object.keys(data)
     console.log(`\nsetting tenant prompts from ${prompttext}\n`)
 
-    // set the prompts
-    // See ... https://auth0.github.io/node-auth0/ManagementClient.html#updateCustomTextByLanguage
-    // and ... https://auth0.com/docs/customize/universal-login-pages/customize-login-text-prompts
-    const promptParams = {
-      prompt: 'login',
-      language: 'en',
-      body: require(prompttext)
+    for (let prompt of keys) {
+      // set the prompts
+      // See ... https://auth0.github.io/node-auth0/ManagementClient.html#updateCustomTextByLanguage
+      // and ... https://auth0.com/docs/customize/universal-login-pages/customize-login-text-prompts
+      let body = {}
+      body[prompt] = data[prompt]
+      const promptParams = {
+        prompt,
+        language: 'en',
+        body
+      }
+      const setPrompts = await api.prompts.updateCustomTextByLanguage(promptParams)
+      console.log('success set login prompts')
+      console.log(setPrompts)
     }
-    const setPrompts = await api.prompts.updateCustomTextByLanguage(promptParams)
-    console.log('success set login prompts')
-    console.log(setPrompts)
+    
   } catch (error) {
     console.log('error while updating new universal login.')
     console.error(error)
