@@ -1,0 +1,102 @@
+{
+  "navbar-title": "Ellevation",
+  "navbar-logo-url": "https://ellevationeducation.com/sites/all/themes/ellevation_zen/logo.png",
+  "navbar-color": "transparent",
+  "navbar-full-width": true,
+  "hero-full-width-header": true,
+  "hero-two-column-layout": false,
+  "hero-include-search-bar": false,
+  "hero-background-image": "https://ellevationeducation.com/sites/default/files/styles/full-width-photo/public/images/slide-foreground/foreground_0.png?itok=epgnJ7vl",
+  "navbar-toolbar-routes": {
+    "Why Ellevation": "/",
+    "Solutions": "/",
+    "Products": "/",
+    "Users": "/",
+    "Success": "/",
+    "EL Community": "/"
+  },
+  "hero-tagline": "Expect more for your EL program",
+  "hero-subtitle": "Efficient program management. High quality instruction. Effective collaboration with colleagues. Great student outcomes. Your ELs deserve it.",
+  "hero-text-color": "",
+  "hero-call-to-action-button": "",
+  "hero-background-color": "#f0f0f0",
+  "two-column-section-column1-title": "For Students",
+  "two-column-section-column1-subtitle": "Accelerate learning now with Ellevation Math and Ellevation Strategies » ",
+  "two-column-section-column1-call-to-action": "Learn More",
+  "two-column-section-column1-image": "https://ellevationeducation.com/sites/default/files/styles/square-small/public/solution-interactive-photo/inactive/students-inactive.jpg?itok=TLZyaXBL",
+  "two-column-section-column1-content": "Make rigorous classroom content accessible for all learners.",
+  "two-column-section-column2-title": "For Teachers",
+  "two-column-section-column2-subtitle": "Choose a higher level of EL solutions",
+  "two-column-section-column2-call-to-action": "Why Ellevation",
+  "two-column-section-column2-image": "https://ellevationeducation.com/sites/default/files/styles/square-small/public/solution-interactive-photo/inactive/teachers-inactive_4.jpg?itok=ZlAJC3gp",
+  "two-column-section-column2-content": "Ellevation empowers teachers, administrators and ELs with the only system designed to go beyond compliance and impact instruction. With greater access to information and effective measurement, Ellevation creates a higher level of accountability, helping everyone reach their highest potential. » Read more at https://ellevationeducation.com/home/default",
+  "two-column-section-enabled": true,
+  "three-column-section-title": "Get everything you need in one end-to-end solution.",
+  "three-column-section-enabled": true,
+  "three-column-section-colored-background": true,
+  "three-column-section-column1-subtitle": "Data & Instructional Planning » Read more at https://ellevationeducation.com/home/default",
+  "three-column-section-column1-call-to-action": "Administrative Solutions",
+  "three-column-section-column1-image": "https://ellevationeducation.com/sites/all/themes/ellevation_zen/sass/blocks/solutions-triptych/blue.jpg",
+  "three-column-section-column1-content": "Ensure that the key data & program information needed to meet diverse program requirements are in one convenient place - not multiple spreadsheets, folders and complicated data platforms.",
+  "three-column-section-column2-subtitle": "Teacher Capacity",
+  "three-column-section-column2-call-to-action": "Teacher Capacity Solutions",
+  "three-column-section-column2-image": "https://ellevationeducation.com/sites/all/themes/ellevation_zen/sass/blocks/solutions-triptych/green.jpg",
+  "three-column-section-column2-content": "Empower teachers of every subject and grade to differentiate instruction for ELs with skill and confidence while engaging all students in sound pedagogical practices.",
+  "three-column-section-column3-subtitle": "Academic Language",
+  "three-column-section-column3-call-to-action": "Academic Language Solutions",
+  "three-column-section-column3-image": "https://ellevationeducation.com/sites/all/themes/ellevation_zen/sass/blocks/solutions-triptych/orange.jpg",
+  "three-column-section-column3-content": "Prepare ELs to understand in-class instruction by teaching them the academic language they must know to access rigorous, grade-level math content.",
+  "content-box-enabled": false,
+  "content-box-image": "https://cdn.staging.auth0.cloud/assets/imgs/company0-customer-reactions.jpeg",
+  "content-box-subtitle": "Customer's Recommendations",
+  "content-box-content": "“CompanyZero and it’s amazing support team has helped me set up my first ever online store from the ground up. Now I’m making a living from my hobby. Couldn’t be happier!” – Tomasz Groborz",
+  "content-box-call-to-action": "Read more testimonials",
+  "icon-section-icon1": "engineer",
+  "icon-section-icon2": "lightbulb",
+  "icon-section-icon3": "store",
+  "icon-section-icon4": "heart",
+  "icon-section-icon5": "cloud",
+  "icon-section-caption1": "Custom Offerings",
+  "icon-section-caption2": "Quality Assured",
+  "icon-section-caption3": "Business Oriented",
+  "icon-section-caption4": "Empathy Based",
+  "icon-section-caption5": "Data Driven",
+  "icon-section-header": "Our values are highly valuable.",
+  "icon-section-enabled": false,
+  "content-box-callToAction": "Sign up for free",
+  "hero-call-to-action": "Start a free trial",
+  "theme": {
+    "title": "Custom",
+    "data": {
+      "palette": {
+        "mode": "light",
+        "primary": {
+          "main": "#1b53a3"
+        },
+        "secondary": {
+          "main": "#8bc532"
+        },
+        "info": {
+          "main": "#2196f3"
+        },
+        "warning": {
+          "main": "#e88a1b"
+        },
+        "error": {
+          "main": "#f44336"
+        },
+        "success": {
+          "main": "#4caf50"
+        },
+        "text": {
+          "primary": "#000"
+        }
+      },
+      "typography": {
+        "button": {
+          "textTransform": "none"
+        }
+      }
+    }
+  }
+}
