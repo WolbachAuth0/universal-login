@@ -1,0 +1,87 @@
+{
+  "navbar-title": "SWEET",
+  "navbar-logo-url": "https://svgshare.com/i/iAn.svg",
+  "navbar-color": "primary",
+  "navbar-full-width": true,
+  "hero-full-width-header": false,
+  "hero-two-column-layout": true,
+  "hero-include-search-bar": true,
+  "hero-background-image": "https://miro.medium.com/max/1400/1*SNOwGBmvP12qQA-NA4FXmg.gif",
+  "navbar-toolbar-routes": {
+    "ABOUT": "/",
+    "BLOG": "/",
+    "HELP": "/"
+  },
+  "hero-tagline": "Collect them ALL",
+  "hero-subtitle": "Buy, Sell and Trade NFT Digital Collectibles",
+  "hero-text-color": "#FFFFFF",
+  "hero-call-to-action-button": "",
+  "hero-background-color": "#272727",
+  "two-column-section-column1-title": "Featured",
+  "two-column-section-column1-subtitle": "Chinese New Year NFT Collection",
+  "two-column-section-column1-call-to-action": "View Listing",
+  "two-column-section-column1-image": "https://iili.io/h7M7pV.png",
+  "two-column-section-column1-content": "8,888 digital collectibles from 8 acclaimed artists",
+  "two-column-section-column2-title": "Auctions",
+  "two-column-section-column2-subtitle": "McLaren Racing NFT Collection",
+  "two-column-section-column2-call-to-action": "View Listing",
+  "two-column-section-column2-image": "https://iili.io/h7Ejcv.png",
+  "two-column-section-column2-content": "Total Run 35, Availability 0, Token Type FA2",
+  "two-column-section-enabled": false,
+  "three-column-section-title": "See all of our Available Collections",
+  "three-column-section-enabled": true,
+  "three-column-section-colored-background": false,
+  "three-column-section-column1-subtitle": "Featured",
+  "three-column-section-column1-call-to-action": "View Listings",
+  "three-column-section-column1-image": "https://iili.io/h7M7pV.png",
+  "three-column-section-column1-content": "Chinese New Year NFT Collection. See 8,888 digital collectibles from 8 acclaimed artists",
+  "three-column-section-column2-subtitle": "Auction",
+  "three-column-section-column2-call-to-action": "View Listings",
+  "three-column-section-column2-image": "https://iili.io/h7Ejcv.png",
+  "three-column-section-column2-content": "McLaren Racing NFT Collection, LIMITED AVAILABILITY !",
+  "three-column-section-column3-subtitle": "Fixed Price",
+  "three-column-section-column3-call-to-action": "View Listings",
+  "three-column-section-column3-image": "https://iili.io/h7EWPa.png",
+  "three-column-section-column3-content": "Collect of of 10,000 unique forever friends. 90% of proceeds go to The Petfinder Foundation",
+  "content-box-enabled": false,
+  "content-box-image": "https://cdn.staging.auth0.cloud/assets/imgs/company0-customer-reactions.jpeg",
+  "content-box-subtitle": "Customer's Recommendations",
+  "content-box-content": "“CompanyZero and it’s amazing support team has helped me set up my first ever online store from the ground up. Now I’m making a living from my hobby. Couldn’t be happier!” – Tomasz Groborz",
+  "content-box-call-to-action": "Read more testimonials",
+  "icon-section-icon1": "engineer",
+  "icon-section-icon2": "lightbulb",
+  "icon-section-icon3": "store",
+  "icon-section-icon4": "heart",
+  "icon-section-icon5": "cloud",
+  "icon-section-caption1": "Custom Offerings",
+  "icon-section-caption2": "Quality Assured",
+  "icon-section-caption3": "Business Oriented",
+  "icon-section-caption4": "Empathy Based",
+  "icon-section-caption5": "Data Driven",
+  "icon-section-header": "Our values are highly valuable.",
+  "icon-section-enabled": false,
+  "content-box-callToAction": "Sign up for free",
+  "hero-call-to-action": "Featured",
+  "theme": {
+    "title": "Dark",
+    "data": {
+      "palette": {
+        "mode": "dark",
+        "primary": {
+          "main": "#90caf9"
+        },
+        "secondary": {
+          "main": "#ce93d8"
+        },
+        "text": {
+          "primary": "#fff"
+        }
+      },
+      "typography": {
+        "button": {
+          "textTransform": "none"
+        }
+      }
+    }
+  }
+}
