@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "set:prompts": "node ./tasks/universal-login/set-prompts.js",
-    "get:universal-login": "node ./tasks/universal-login/get.js",
-    "set:universal-login": "node ./tasks/universal-login/set.js",
-    "reset:universal-login": "node ./tasks/universal-login/reset.js",
+    "get:ul": "node ./tasks/universal-login/get.js",
+    "set:ul": "node ./tasks/universal-login/set.js",
+    "reset:ul": "node ./tasks/universal-login/reset.js",
     "find:users": "node ./tasks/users/find.js"
   },
   "repository": {

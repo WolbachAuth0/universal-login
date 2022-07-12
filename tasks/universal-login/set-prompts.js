@@ -1,50 +1,32 @@
-const fs = require('fs')
-const path = require('path')
 const inquirer = require('inquirer')
 const themes = require('./themes')
 const management = require('./../../lib/get-management-client')
-
-const scopes = [ 'update:branding' ]
-const prompts = [
-  {
-    type: 'list',
-    name: 'theme',
-    message: 'Select the Universal Login theme:',
-    choices: themes.map(scheme => scheme.name),
-  }
-]
+const ULprompts = require('../../lib/ul-prompts')
 
 setPrompts()
 
 async function setPrompts() {
-  try {
-    const api = await management(scopes)
-    const answers = await inquirer.prompt(prompts)
-
-    const directory = themes.find(scheme => scheme.name == answers.theme).path
-    const prompttext = path.join(directory, `prompts.json`)
-    const data = require(prompttext)
-    const keys = Object.keys(data)
-    console.log(`\nsetting tenant prompts from ${prompttext}\n`)
-
-    for (let prompt of keys) {
-      // set the prompts
-      // See ... https://auth0.github.io/node-auth0/ManagementClient.html#updateCustomTextByLanguage
-      // and ... https://auth0.com/docs/customize/universal-login-pages/customize-login-text-prompts
-      let body = {}
-      body[prompt] = data[prompt]
-      const promptParams = {
-        prompt,
-        language: 'en',
-        body
-      }
-      const setPrompts = await api.prompts.updateCustomTextByLanguage(promptParams)
-      console.log('success set login prompts')
-      console.log(setPrompts)
+  const prompts = [
+    {
+      type: 'list',
+      name: 'theme',
+      message: 'Select the Universal Login theme:',
+      choices: themes.map(scheme => scheme.name),
     }
-    
+  ]
+  
+  try {
+    // instantiate the management API client
+    const api = await management([ 'update:branding' ])
+    // display the theme prompts to the console
+    const answers = await inquirer.prompt(prompts)
+    // from the selected answers, get the theme directory
+    const directory = themes.find(scheme => scheme.name == answers.theme).path
+    console.log(`\nsetting tenant universal login prompts`)
+
+    await ULprompts.update(api, directory)
   } catch (error) {
-    console.log('error while updating new universal login.')
+    console.log('error while updating new universal login prompts.')
     console.error(error)
   }
 }
