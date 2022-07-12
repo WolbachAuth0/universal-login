@@ -1,0 +1,103 @@
+{
+  "navbar-title": "theSkimm",
+  "navbar-logo-url": "https://www.theskimm.com/_next/image?url=%2Flogos%2Fskimm-nav-logo.svg&w=128&q=75",
+  "navbar-color": "transparent",
+  "navbar-full-width": true,
+  "hero-full-width-header": false,
+  "hero-two-column-layout": false,
+  "hero-include-search-bar": false,
+  "hero-background-image": "https://images.ctfassets.net/6g4gfm8wk7b6/5wIvTWPYkgBjgjex7aFfJK/58bc95fdc73207b866162b588ae0673f/Buzz.png?w=2835&fm=jpg&fl=progressive",
+  "navbar-toolbar-routes": {
+    "NEWS": "/",
+    "MONEY": "/",
+    "WELL": "/",
+    "LIFE": "/",
+    "EVENTS": "/",
+    "DAILY SKIMM": "/",
+    "MORE +": "/"
+  },
+  "hero-tagline": "",
+  "hero-subtitle": "Why Pixar's New 'Lightyear' Is Already Generating Buzz",
+  "hero-text-color": "#FFFFFF",
+  "hero-call-to-action-button": "",
+  "hero-background-color": "#f0f0f0",
+  "two-column-section-column1-title": "News",
+  "two-column-section-column1-subtitle": "“We Are Allowed to Be In Control of Our Own Narratives:” Angelica Ross on Being a Black Trans Woman in Hollywood",
+  "two-column-section-column1-call-to-action": "News",
+  "two-column-section-column1-image": "https://images.ctfassets.net/6g4gfm8wk7b6/2kDJzQ91spgz1u3rXdz3Cs/384dd60f91df0a5566a6b65b5c4c93d1/NewsImageTemplate_2-1_Linework-Center_16x9.jpg?w=882&fm=jpg&fl=progressive",
+  "two-column-section-column1-content": "You know Angelica Ross as Candy on “Pose,” or from “American Horror Story.” We talked to her about her experience being a Black trans actress working in Hollywood. Plus how she can inspire young LGBTQ+ people.",
+  "two-column-section-column2-title": "Pride",
+  "two-column-section-column2-subtitle": "Looking for Ways To Celebrate Pride Month? Here Are 8 Ideas.",
+  "two-column-section-column2-call-to-action": "Pride",
+  "two-column-section-column2-image": "https://images.ctfassets.net/6g4gfm8wk7b6/3QwI3gX1lj2DNqh3833o24/efc5a8a303629026ea49e4cabb4bc388/Pride_Month.jpg?w=588&fm=jpg&fl=progressive",
+  "two-column-section-column2-content": "Pride Month is here. And no matter where you are, you can show your support. Whether it’s donating to a good cause, supporting a queer business, or following an LGBTQ+ creator.",
+  "two-column-section-enabled": true,
+  "three-column-section-title": "Tips and tools to help you keep up and get ahead",
+  "three-column-section-enabled": false,
+  "three-column-section-colored-background": true,
+  "three-column-section-column1-subtitle": "Technology First",
+  "three-column-section-column1-call-to-action": "Get started",
+  "three-column-section-column1-image": "https://cdn.staging.auth0.cloud/assets/imgs/company0-microchip.jpeg",
+  "three-column-section-column1-content": "Help keep your customers and employees connected with one of our end to end IT solutions offered by us and our partners. ",
+  "three-column-section-column2-subtitle": "Collaboration Tools",
+  "three-column-section-column2-call-to-action": "Get connected",
+  "three-column-section-column2-image": "https://cdn.staging.auth0.cloud/assets/imgs/company0-collaboration.png",
+  "three-column-section-column2-content": "By leveraging our platform you will gain access to our premium suite of collaboration tools on day one. This will let you work together seamlessly, whether across the room or the globe. ",
+  "three-column-section-column3-subtitle": "Logistical Support",
+  "three-column-section-column3-call-to-action": "Find supplies",
+  "three-column-section-column3-image": "https://cdn.staging.auth0.cloud/assets/imgs/company0-logistics.jpeg",
+  "three-column-section-column3-content": "Whether you need boxes, reusable packaging, bubble wrap, or packing tape, or you want help packing fragile items, we have you covered.",
+  "content-box-enabled": true,
+  "content-box-image": "https://images.ctfassets.net/6g4gfm8wk7b6/5p7bppquJIBdQU6Nj4fh9G/7521c4eef2f81c403e59eb8999fdfea1/GettyImages-1403309928_Cropped.jpg?w=2835&fm=jpg&fl=progressive",
+  "content-box-subtitle": "Latest Podcasts",
+  "content-box-content": "The Climb: Cancer Breakthroughs, Google's AI, Vaccines for Kids",
+  "content-box-call-to-action": "The Daily Skimm",
+  "icon-section-icon1": "engineer",
+  "icon-section-icon2": "lightbulb",
+  "icon-section-icon3": "store",
+  "icon-section-icon4": "heart",
+  "icon-section-icon5": "cloud",
+  "icon-section-caption1": "Custom Offerings",
+  "icon-section-caption2": "Quality Assured",
+  "icon-section-caption3": "Business Oriented",
+  "icon-section-caption4": "Empathy Based",
+  "icon-section-caption5": "Data Driven",
+  "icon-section-header": "Our values are highly valuable.",
+  "icon-section-enabled": false,
+  "content-box-callToAction": "Sign up for free",
+  "hero-call-to-action": "",
+  "theme": {
+    "title": "Custom",
+    "data": {
+      "palette": {
+        "mode": "light",
+        "primary": {
+          "main": "#48dcca"
+        },
+        "secondary": {
+          "main": "#9c27b0"
+        },
+        "info": {
+          "main": "#2196f3"
+        },
+        "warning": {
+          "main": "#ff9800"
+        },
+        "error": {
+          "main": "#f44336"
+        },
+        "success": {
+          "main": "#4caf50"
+        },
+        "text": {
+          "primary": "#000"
+        }
+      },
+      "typography": {
+        "button": {
+          "textTransform": "none"
+        }
+      }
+    }
+  }
+}
