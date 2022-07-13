@@ -4,6 +4,7 @@ const management = require('./../../lib/get-management-client')
 const ULtemplate = require('../../lib/ul-template')
 const ULbranding = require('../../lib/ul-branding')
 const ULprompts = require('../../lib/ul-prompts')
+const ULwidget = require('../../lib/ul-widget')
 
 setUniversalLogin()
 
@@ -31,6 +32,7 @@ async function setUniversalLogin() {
     await ULtemplate.update(api, directory)
     await ULbranding.update(api, directory)
     await ULprompts.update(api, directory)
+    await ULwidget.update(api, directory)
     
   } catch (error) {
     console.log('error while updating new universal login.')
