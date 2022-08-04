@@ -10,22 +10,25 @@ async function get() {
   const api = await management([ 'read:branding' ])
 
   // fetch the stuff from the tenant ...
-  const branding = await ULbranding.read(api)
-  const widget = await ULwidget.read(api)
-  const html = await ULtemplate.read(api)
+  ULbranding.read(api).then(branding => {
+    if (branding) {
+      console.log('\nbranding ...')
+      console.log(branding)
+    }
+  })
 
-  // log it to console ...
-  if (branding) {
-    console.log('\nbranding ...')
-    console.log(branding)
-  }
-  if (widget) {
-    console.log('\nwidget ...')
-    console.log(widget)
-  }
-  if (html) {
-    console.log('\nhtml template ...')
-    console.log(html)
-  }
- 
+  ULwidget.read(api).then(widget => {
+    if (widget) {
+      console.log('\nwidget ...')
+      console.log(widget)
+    }
+  })
+
+  ULtemplate.read(api).then(html => {
+    if (html) {
+      console.log('\nhtml template ...')
+      console.log(html)
+    }
+  })
+
 }
