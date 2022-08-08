@@ -2,14 +2,19 @@ const management = require('./../../lib/get-management-client')
 const ULbranding = require('./../../lib/ul-branding')
 const ULwidget = require('./../../lib/ul-widget')
 const ULtemplate = require('./../../lib/ul-template')
+const ULprompts = require('./../../lib/ul-prompts')
 
 get()
 
 async function get() {
+  // prompt user to select tenant, then instantiate the management API client for that tenant
+  const scopes = [
+    'read:branding',
+    'read:prompts'
+  ]
+  const api = await management(scopes)
 
-  const api = await management([ 'read:branding' ])
-
-  // fetch the stuff from the tenant ...
+  // fetch the stuff from the tenant in paralell ...
   ULbranding.read(api).then(branding => {
     if (branding) {
       console.log('\nbranding ...')
@@ -31,4 +36,10 @@ async function get() {
     }
   })
 
+  ULprompts.read(api).then(prompts => {
+    if (prompts) {
+      console.log('\nprompts ...')
+      console.log(prompts)
+    }
+  })
 }

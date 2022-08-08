@@ -17,7 +17,8 @@ async function setPrompts() {
   
   try {
     // instantiate the management API client
-    const api = await management([ 'update:branding' ])
+    const scopes = [ 'update:prompts' ]
+    const api = await management(scopes)
     // display the theme prompts to the console
     const answers = await inquirer.prompt(prompts)
     // from the selected answers, get the theme directory
