@@ -4,6 +4,7 @@
   "description": "A collection of node.js scripts used by N.A. Corporate SE's for demonstration / working purposes.",
   "main": "index.js",
   "scripts": {
+    "get:prompts": "node ./tasks/universal-login/get-prompts.js",
     "set:prompts": "node ./tasks/universal-login/set-prompts.js",
     "get:ul": "node ./tasks/universal-login/get.js",
     "set:ul": "node ./tasks/universal-login/set.js",
