@@ -1,8 +1,8 @@
 {
   "navbar-title": "SWEET",
-  "navbar-logo-url": "https://svgshare.com/i/iAn.svg",
+  "navbar-logo-url": "https://gist.githubusercontent.com/WolbachAuth0/05945bb8ee06a56a2be7f04cadd121ff/raw/5468af88c77b41a80c36f510f116e7eb60877acf/sweet-text-logo.svg",
   "navbar-color": "primary",
-  "navbar-full-width": true,
+  "navbar-full-width": false,
   "hero-full-width-header": false,
   "hero-two-column-layout": true,
   "hero-include-search-bar": true,

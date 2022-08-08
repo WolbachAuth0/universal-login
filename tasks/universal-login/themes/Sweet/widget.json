@@ -1,0 +1,58 @@
+{
+  "colors": {
+    "primary_button": "#E164Bf",
+    "primary_button_label": "#ffffff",
+    "secondary_button_border": "#c9cace",
+    "secondary_button_label": "#ffffff",
+    "base_focus_color": "#ffffff",
+    "base_hover_color": "#000000",
+    "links_focused_components": "#6981f9",
+    "header": "#ffffff",
+    "body_text": "#ffffff",
+    "widget_background": "#393939",
+    "widget_border": "#202020",
+    "input_labels_placeholders": "#ffffff",
+    "input_filled_text": "#ffffff",
+    "input_border": "#ffffff",
+    "input_background": "#6d6d6d",
+    "icons": "#ffffff",
+    "error": "#d03c38",
+    "success": "#13a688"
+  },
+  "fonts": {
+    "font_url": "",
+    "reference_text_size": 16,
+    "title": { "bold": false, "size": 150 },
+    "subtitle": { "bold": false, "size": 87.5 },
+    "body_text": { "bold": false, "size": 87.5 },
+    "buttons_text": { "bold": false, "size": 100 },
+    "input_labels": { "bold": false, "size": 100 },
+    "links": { "bold": true, "size": 87.5 },
+    "links_style": "normal"
+  },
+  "borders": {
+    "button_border_weight": 1,
+    "buttons_style": "pill",
+    "button_border_radius": 3,
+    "input_border_weight": 1,
+    "inputs_style": "pill",
+    "input_border_radius": 3,
+    "widget_corner_radius": 20,
+    "widget_border_weight": 2,
+    "show_widget_shadow": true
+  },
+  "widget": {
+    "logo_position": "center",
+    "logo_url": "https://gist.githubusercontent.com/WolbachAuth0/05945bb8ee06a56a2be7f04cadd121ff/raw/5468af88c77b41a80c36f510f116e7eb60877acf/sweet-text-logo.svg",
+    "logo_height": 52,
+    "header_text_alignment": "center",
+    "social_buttons_layout": "bottom"
+  },
+  "page_background": {
+    "page_layout": "right",
+    "background_color": "#393939",
+    "background_image_url": "https://images.pexels.com/photos/2156881/pexels-photo-2156881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  "displayName": "Sweet.io Theme",
+  "themeId": "HsPQPp4Pd8X7lRZZbaFCoWRDo5dIocPc"
+}
