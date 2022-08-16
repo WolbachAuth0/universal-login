@@ -32,10 +32,12 @@ async function setUniversalLogin() {
     
     // perform the updates
     console.log(`\nUpdating new universal login for ${api.tenantName} tenant from ${answers.theme} theme.`)
+    // do the widget FIRST and wait for it to complete. Then do the rest of it.
+    await ULwidget.update(api, directory)
     ULtemplate.update(api, directory).then(() => {})
     ULbranding.update(api, directory).then(() => {})
     ULprompts.update(api, directory).then(() => {})
-    ULwidget.update(api, directory).then(() => {})
+    
     
   } catch (error) {
     console.log('error while updating new universal login.')
