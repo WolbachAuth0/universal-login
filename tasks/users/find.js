@@ -2,7 +2,7 @@ const scopes = [
   'read:users',
   'read:user_idp_tokens',
 ]
-const management = require('./../get-management-client')
+const management = require('./../../lib/get-management-client')
 
 const args = process.argv.slice(2)
 const emailRE = /^email=(.*)$/
