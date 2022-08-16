@@ -6,6 +6,7 @@
   "scripts": {
     "get:prompts": "node ./tasks/universal-login/get-prompts.js",
     "set:prompts": "node ./tasks/universal-login/set-prompts.js",
+    "set:template": "node ./tasks/universal-login/set-template.js",
     "get:ul": "node ./tasks/universal-login/get.js",
     "set:ul": "node ./tasks/universal-login/set.js",
     "reset:ul": "node ./tasks/universal-login/reset.js",
