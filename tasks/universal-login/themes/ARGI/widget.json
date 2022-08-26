@@ -1,0 +1,58 @@
+{
+  "colors": {
+    "primary_button": "#18658f",
+    "primary_button_label": "#ffffff",
+    "secondary_button_border": "#c9cace",
+    "secondary_button_label": "#1e212a",
+    "base_focus_color": "#4fc3e0",
+    "base_hover_color": "#000000",
+    "links_focused_components": "#4fc3e0",
+    "header": "#1e212a",
+    "body_text": "#1e212a",
+    "widget_background": "#FFFFFF",
+    "widget_border": "#4fc3e0",
+    "input_labels_placeholders": "#757892",
+    "input_filled_text": "#000000",
+    "input_border": "#1e212a",
+    "input_background": "#ffffff",
+    "icons": "#757892",
+    "error": "#ee3831",
+    "success": "#099f4d"
+  },
+  "fonts": {
+    "font_url": "",
+    "reference_text_size": 16,
+    "title": { "bold": false, "size": 150 },
+    "subtitle": { "bold": false, "size": 87.5 },
+    "body_text": { "bold": false, "size": 87.5 },
+    "buttons_text": { "bold": false, "size": 100 },
+    "input_labels": { "bold": false, "size": 100 },
+    "links": { "bold": true, "size": 87.5 },
+    "links_style": "normal"
+  },
+  "borders": {
+    "button_border_weight": 1,
+    "buttons_style": "pill",
+    "button_border_radius": 3,
+    "input_border_weight": 1,
+    "inputs_style": "pill",
+    "input_border_radius": 3,
+    "widget_corner_radius": 14,
+    "widget_border_weight": 4,
+    "show_widget_shadow": true
+  },
+  "widget": {
+    "logo_position": "center",
+    "logo_url": "https://argifinancialgroup.com/wp-content/uploads/2021/07/ARGI-only_blue_registered-1.png",
+    "logo_height": 52,
+    "header_text_alignment": "center",
+    "social_buttons_layout": "bottom"
+  },
+  "page_background": {
+    "page_layout": "left",
+    "background_color": "#c9cace",
+    "background_image_url": "https://ssir.org/images/blog/Lamy-Leijonhufvud-ODonohoe-next-decade-impact-invest-592x444.jpg"
+  },
+  "displayName": "Unnamed Theme",
+  "themeId": "5dwcoyomlgeOnQID70XNVvaKXfgvBSTX"
+}
