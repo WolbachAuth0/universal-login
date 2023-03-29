@@ -4,7 +4,32 @@
     {%- auth0:head -%}
   </head>
   <body class="_widget-auto-layout">
-    <!-- <img src="https://thumbs.dreamstime.com/b/stuttgart-germany-person-holding-smartphone-logo-us-identity-management-company-okta-inc-screen-front-website-focus-248372674.jpg"/> -->
-    {%- auth0:widget -%}
+    
+    <h3> prompt.name: {{ prompt.name }}</h3>
+
+    <div class="row">
+      <div class="column">
+        {% if prompt.name == "organization" %}
+        <div class="prompt-wrapper">
+          <h2>organization</h2>
+          <h3>id: {{ organization.id }}</h3>
+          <h3>display_name: {{ organization.display_name }}</h3>
+          <h3>name: {{ organization.name }}</h3>
+          <h3>metadata.keys: {{ Object.keys(organization.metadata).join(', ') }}</h3>
+          <h3>branding.logo_url: {{ organization.branding.logo_url }}</h3>
+          <h3>branding.colors.primary: {{ organization.branding.colors.primary }}</h3>
+          <h3>branding.colors.page_background: {{ organization.branding.colors.page_background }}</h3>
+        </div>
+        {% endif %}
+        
+      </div>
+      <div class="column"></div>
+      <div class="column">
+        <div class="prompt-wrapper">
+          {%- auth0:widget -%}
+        </div>
+      </div>
+    </div>
+    
   </body>
 </html>

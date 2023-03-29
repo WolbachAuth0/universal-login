@@ -61,7 +61,7 @@
   },
   "widget": {
     "logo_position": "center",
-    "logo_url": "https://okta.valuestoryapp.com/okta/resources-2022-04-26_17-53/dist/customerIdentity/images/okta-auth0-color.svg",
+    "logo_url": "https://www.okta.com/sites/default/files/media/image/2021-03/Logo_Okta_Blue_RGB.png",
     "logo_height": 52,
     "header_text_alignment": "center",
     "social_buttons_layout": "bottom"
@@ -69,7 +69,7 @@
   "page_background": {
     "page_layout": "right",
     "background_color": "#c9cace",
-    "background_image_url": ""
+    "background_image_url": "https://raw.githubusercontent.com/oktadev/.github/main/images/okta-dev-header.png"
   },
   "displayName": "Unnamed Theme",
   "themeId": "5dwcoyomlgeOnQID70XNVvaKXfgvBSTX"
