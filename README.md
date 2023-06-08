@@ -1,7 +1,7 @@
 
-# Auth0 - North America Commercial CIAM Specialist Management API 
+# Okta Customer Identity Cloud Universal Login Manager
 
-This repository contains a collection of scripts which access the Auth0 Management API to perform various tasks. The initial intent was to provide functionality which is not currently available via the Auth0 dashboard, but may require demonstration to customers. Examples include, bulk loading of users and customization of the new universal login experience.
+This repository contains a collection of scripts which intended to manage customizations of the Auth0 Universal Login. 
 
 ## Installation
 
