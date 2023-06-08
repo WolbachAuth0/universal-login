@@ -4,6 +4,7 @@ const ULbranding = require('./../../lib/ul-branding')
 const ULwidget = require('./../../lib/ul-widget')
 const ULtemplate = require('./../../lib/ul-template')
 const ULprompts = require('./../../lib/ul-prompts')
+const fs = require('fs')
 const path = require('path')
 const themes = require('./themes')
 const jsonfile = require('jsonfile')
@@ -17,67 +18,81 @@ async function get() {
     'read:prompts'
   ]
   const api = await management(scopes)
-  const theme = await saveTheme()
+  const theme = await promptSaveTheme()
   
   // fetch the stuff from the tenant in paralell ...
-  ULbranding
+  await ULbranding
     .read(api)
     .then(async branding => {
-      if (!branding) { return }
+      if (!branding || Object.keys(branding).length == 0) {
+        console.log('branding object was empty.\n')
+        return
+      }
       
       if (theme.save) {
-        const filepath = path.join(theme.directory, ULbranding.filename)
-        const saveResult = await jsonfile.writeFile(filepath, branding)
+        const saveResult = await saveJSONFile(theme.directory, ULbranding.filename, branding)
+        console.log(`Saved ${ULbranding.filename} to ${theme.name} theme.`)
       } else {
-        console.log('\nbranding ...')
+        console.log('branding ...')
         console.log(branding)
       }
+
+      console.log('\n')
     })
 
-  ULwidget
+  await ULwidget
     .read(api)
     .then(async widget => {
-      if (!widget) { return }
+      if (!widget || Object.keys(widget).length == 0) {
+        console.log('widget object was empty.\n')
+        return
+      }
       
       if (theme.save) {
-        const filepath = path.join(theme.directory, ULwidget.filename)
-        const saveResult = await jsonfile.writeFile(filepath, widget)
+        const saveResult = await saveJSONFile(theme.directory, ULwidget.filename, widget)
+        console.log(`Saved ${ULwidget.filename} to ${theme.name} theme.`)
       } else {
-        console.log('\nwidget ...')
+        console.log('widget ...')
         console.log(widget)
       }
+
+      console.log('\n')
     })
 
-  ULtemplate
+  await ULtemplate
     .read(api)
     .then(async html => {
-      if (!html) { return }
-      
-      if (theme.save) {
-        const filepath = path.join(theme.directory, ULtemplate.filename)
-        const saveResult = await jsonfile.writeFile(filepath, html)
-      } else {
-        console.log('\nhtml template ...')
-        console.log(html)
+      if (!html) {
+        console.log('The universal login html template was empty.\n')
+        return
       }
+      
+      console.log('html template ...')
+      console.log(html)
+      console.log('\n')
     })
 
-  ULprompts
+  await ULprompts
     .read(api)
     .then(async prompts => {
-      if (!prompts) { return }
+      if (!prompts || Object.keys(prompts).length == 0) {
+        console.log('prompts object was empty.\n')
+        return
+      }
       
       if (theme.save) {
-        const filepath = path.join(theme.directory, ULprompts.filename)
-        const saveResult = await jsonfile.writeFile(filepath, prompts)
+        const saveResult = await saveJSONFile(theme.directory, ULprompts.filename, prompts)
+        console.log(`Saved ${ULprompts.filename} to ${theme.name} theme.`)
       } else {
-        console.log('\nprompts ...')
+        console.log('prompts ...')
         console.log(prompts)
       }
+
+      console.log('\n')
     })
 }
 
-async function saveTheme () { 
+async function promptSaveTheme () { 
   const save = await inquirer
     .prompt([
       {
@@ -124,6 +139,15 @@ async function saveTheme () {
   const directory = path.join(__dirname, `/themes/${choice.name}`)
   return {
     save: true,
+    name: choice.name,
     directory
   }
+}
+
+async function saveJSONFile (directory, filename, data) {  
+  if (!fs.existsSync(directory)){
+    fs.mkdirSync(directory, { recursive: true });
+  }
+  const filepath = path.join(directory, filename)
+  return await jsonfile.writeFile(filepath, data, { spaces: 2 })
 }
