@@ -10,7 +10,7 @@ This repository contains a collection of scripts which intended to manage custom
 1. Clone this repository
 
 ```bash
-git clone https://github.com/auth0/se-corp-na-samples.git
+git clone https://github.com/WolbachAuth0/universal-login.git
 cd se-corp-na-samples
 ```
 
