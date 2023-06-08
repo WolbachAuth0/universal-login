@@ -1,0 +1,58 @@
+{
+ "borders": {
+   "button_border_weight": 1,
+   "buttons_style": "rounded",
+   "button_border_radius": 3,
+   "input_border_weight": 1,
+   "inputs_style": "rounded",
+   "input_border_radius": 3,
+   "widget_corner_radius": 30,
+   "widget_border_weight": 1,
+   "show_widget_shadow": true
+  },
+ "colors": {
+   "primary_button": "#191919",
+   "primary_button_label": "#f4f2ec",
+   "secondary_button_border": "#191919",
+   "secondary_button_label": "#191919",
+   "base_focus_color": "#3F59E4",
+   "base_hover_color": "#3F59E4",
+   "links_focused_components": "#3F59E4",
+   "header": "#191919",
+   "body_text": "#191919",
+   "widget_background": "#F6F1E7",
+   "widget_border": "#191919",
+   "input_labels_placeholders": "#191919",
+   "input_filled_text": "#191919",
+   "input_border": "#191919",
+   "input_background": "#f4f2ec",
+   "icons": "#191919",
+   "error": "#d03c38",
+   "success": "#13a688"
+  },
+ "displayName": "Unnamed Theme",
+ "fonts": {
+   "font_url": "https://cdn.demo.okta.com/fonts/aeonik-regular.woff2",
+   "reference_text_size": 16,
+   "title": {"bold": false,"size": 150 },
+   "subtitle": {"bold": false,"size": 87.5 },
+   "body_text": {"bold": false,"size": 87.5 },
+   "buttons_text": {"bold": false,"size": 100 },
+   "input_labels": {"bold": false,"size": 100 },
+   "links": {"bold": true,"size": 87.5 },
+   "links_style": "normal"
+  },
+ "page_background": {
+   "page_layout": "right",
+   "background_color": "#f4f2ec",
+   "background_image_url": "https://www.usta.com/content/dam/usta/Articles/article-desktop/20170106_About_USTA_A.jpg.thumb.585.1170.png"
+  },
+ "widget": {
+   "logo_position": "center",
+   "logo_url": "https://www.usta.com/content/dam/usta/logos/section-logos/USTA_1c-black_RGB.png",
+   "logo_height": 90,
+   "header_text_alignment": "center",
+   "social_buttons_layout": "bottom"
+  },
+ "themeId": "Jf1tZAoSvsmWdFnjKfhPehMGBy8JFECM"
+}

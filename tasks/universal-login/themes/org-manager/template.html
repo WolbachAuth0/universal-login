@@ -2,22 +2,10 @@
 <html>
   <head>
     {%- auth0:head -%}
-    {% if organization.name == "circle-org" %} 
+    {% if organization && Object.keys(organization.metadata).includes('background') %}
       <style>
         body {
-          background-image: url("https://images.pexels.com/photos/698485/pexels-photo-698485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-        }
-      </style>
-    {% elsif organization.name == "square-org" %}
-      <style>
-        body {
-          background-image: url("https://images.pexels.com/photos/3038740/pexels-photo-3038740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-        }
-      </style>
-    {% elsif organization.name == "triangle-org" %}
-      <style>
-        body {
-          background-image: url("https://images.pexels.com/photos/139198/pexels-photo-139198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+          background-image: url("{{ organization.metadata.background }}");
         }
       </style>
     {% else %}
@@ -48,37 +36,123 @@
         height: 100%;
         justify-content: center;
       }
+      .debug {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+        justify-content: center;
+        background-color: azure;
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 4px;
+        border-color: #757892;
+      }
+      .debug-container {
+        display: grid;
+        grid-template-rows: [left-start center-start right-start] 1fr [left-end center-end right-end];
+        grid-template-columns: [left-start center-start] 1fr [left-end right-start] 1fr [center-end right-end];
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        grid-column-gap: 160px;
+        -moz-column-gap: 160px;
+        column-gap: 160px;
+        grid-column-gap: calc(var(--outer-padding)*2);
+        -moz-column-gap: calc(var(--outer-padding)*2);
+        column-gap: calc(var(--outer-padding)*2);
+        width: 100%;
+        padding: 80px;
+        padding: var(--outer-padding);
+        min-height: 100vh;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+      }
     </style>
 
   </head>
   <body class="_widget-auto-layout">
-    
-    <!-- <h3> prompt.name: {{ prompt.name }}</h3> -->
      
     <div class="row">
+
       <div class="column">
+
+        {% if application?.metadata?.debug.toLowerCase() == 'true' %}
+        <div class="debug-container">
+          <div class="debug">
+            <h1>Debug</h1>
+            <p>
+              The following data is passed to the HTML template of the login screen.
+              See <a href="https://auth0.com/docs/customize/universal-login-pages/universal-login-page-templates">the auth0 documentation</a> for more info about the liquid syntax.
+            </p><br>
+            <p>
+              The following data relates to the specific login screen.
+            </p><br>
+            <table>
+              <tr>
+                <th>prompt.name</th> <td>{{ prompt.name }}</td>
+              </tr>
+              <tr>
+                <th>prompt.screen.name</th> <td>{{ prompt.screen.name }}</td>
+              </tr>
+              <tr>
+                <th>application.id</th> <td>{{ application.id }}</td>
+              </tr>
+              <tr>
+                <th>application.name</th> <td>{{ application.name }}</td>
+              </tr>
+              <tr>
+                <th>application.logo_url</th> <td>{{ application.logo_url }}</td>
+              </tr>
+              <tr>
+                <th>application.metadata</th> <td>{{ application.metadata }}</td>
+              </tr>
+            </table>
+
+            {% if organization %}
+            <p>
+              The following data relates to the organization context.
+            </p><br>
+            <table>
+              <tr>
+                <th>organization.id</th> <td>{{ organization.id }}</td>
+              </tr>
+              <tr>
+                <th>organization.display_name</th> <td>{{ organization.display_name }}</td>
+              </tr>
+              <tr>
+                <th>organization.name</th> <td>{{ organization.name }}</td>
+              </tr>
+              <tr>
+                <th>organization.metadata</th> <td>{{ organization.metadata }}</td>
+              </tr>
+              <tr>
+                <th>organization.logo_url</th> <td>{{ organization.branding.logo_url }}</td>
+              </tr>
+              <tr>
+                <th>organization.primary</th> <td>{{ organization.branding.colors.primary }}</td>
+              </tr>
+              <tr>
+                <th>organization.page_background</th> <td>{{ organization.branding.colors.page_background  }}</td>
+              </tr>
+            </table>
+            {% endif %}
+          </div>
+        </div>
+        {% endif %}
         
-        <!-- <div class="prompt-wrapper">
-          <h2>organization</h2>
-          <h3>id: {{ organization.id }}</h3>
-          <h3>display_name: {{ organization.display_name }}</h3>
-          <h3>name: {{ organization.name }}</h3>
-          <h3>metadata.keys: {{ Object.keys(organization.metadata).join(', ') }}</h3>
-          <h3>branding.logo_url: {{ organization.branding.logo_url }}</h3>
-          <h3>branding.colors.primary: {{ organization.branding.colors.primary }}</h3>
-          <h3>branding.colors.page_background: {{ organization.branding.colors.page_background }}</h3>
-        </div> -->
-       
       </div>
+      
       <div class="column"></div>
+
       <div class="column">
         <div class="prompt-wrapper">
           {%- auth0:widget -%}
         </div>
       </div>
+      
     </div>
     
-
-
   </body>
 </html>

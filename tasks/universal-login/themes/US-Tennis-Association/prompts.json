@@ -1,0 +1,14 @@
+{
+  "login": {
+    "login": {
+      "description": "Log in to US Tennis Foundation to continue to Tennislink.",
+      "usernamePlaceholder": "Phone # or Email address"
+    }
+  },
+  "login-id": {
+    "login-id": {
+      "description": "Log in to US Tennis Foundation to continue to Tennislink.",
+      "usernamePlaceholder": "Phone # or Email address"
+    }
+  }
+}
