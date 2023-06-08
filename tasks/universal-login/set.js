@@ -25,14 +25,14 @@ async function setUniversalLogin() {
       'update:prompts'
     ]
     const api = await management(scopes)
-    // display the theme prompts to the console
     const answers = await inquirer.prompt(prompts)
     // from the selected answers, get the theme directory
     const directory = themes.find(scheme => scheme.name == answers.theme).path
     
     // perform the updates
     console.log(`\nUpdating new universal login for ${api.tenantName} tenant from ${answers.theme} theme.`)
-    // do the widget FIRST and wait for it to complete. Then do the rest of it.
+    
+    // do the widget FIRST and wait for it to complete. Then do the rest of it in parallel.
     await ULwidget.update(api, directory)
     ULtemplate.update(api, directory).then(() => {})
     ULbranding.update(api, directory).then(() => {})

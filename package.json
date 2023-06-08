@@ -4,13 +4,10 @@
   "description": "A collection of node.js scripts used by N.A. Corporate SE's for demonstration / working purposes.",
   "main": "index.js",
   "scripts": {
-    "get:prompts": "node ./tasks/universal-login/get-prompts.js",
-    "set:prompts": "node ./tasks/universal-login/set-prompts.js",
-    "set:template": "node ./tasks/universal-login/set-template.js",
+    "start": "node ./start.js",
     "get:ul": "node ./tasks/universal-login/get.js",
     "set:ul": "node ./tasks/universal-login/set.js",
-    "reset:ul": "node ./tasks/universal-login/reset.js",
-    "find:users": "node ./tasks/users/find.js"
+    "reset:ul": "node ./tasks/universal-login/reset.js"
   },
   "repository": {
     "type": "git",
