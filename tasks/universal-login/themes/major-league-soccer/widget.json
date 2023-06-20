@@ -1,6 +1,6 @@
 {
   "colors": {
-    "primary_button": "#1d87ff",
+    "primary_button": "#be3233",
     "primary_button_label": "#ffffff",
     "secondary_button_border": "#000000",
     "secondary_button_label": "#000000",
@@ -22,12 +22,30 @@
   "fonts": {
     "font_url": "",
     "reference_text_size": 16,
-    "title": { "bold": false, "size": 150 },
-    "subtitle": { "bold": false, "size": 87.5 },
-    "body_text": { "bold": false, "size": 87.5 },
-    "buttons_text": { "bold": false, "size": 100 },
-    "input_labels": { "bold": false, "size": 100 },
-    "links": { "bold": true, "size": 87.5 },
+    "title": {
+      "bold": false,
+      "size": 150
+    },
+    "subtitle": {
+      "bold": false,
+      "size": 87.5
+    },
+    "body_text": {
+      "bold": false,
+      "size": 87.5
+    },
+    "buttons_text": {
+      "bold": false,
+      "size": 100
+    },
+    "input_labels": {
+      "bold": false,
+      "size": 100
+    },
+    "links": {
+      "bold": true,
+      "size": 87.5
+    },
     "links_style": "normal"
   },
   "borders": {

@@ -1,0 +1,18 @@
+{
+  "login": {
+    "description": "Log in to Major League Soccer Fan 360 to continue."
+  },
+  "login-id": {
+    "description": "Log in to Major League Soccer Fan 360 to continue."
+  },
+  "signup-id": {
+    "description": "Sign Up to Major League Soccer Fan 360 to continue."
+  },
+  "signup-password": {
+    "description": "Sign Up to Major League Soccer Fan 360 to continue."
+  },
+  "consent": {
+    "messageSingleTenant": "${clientName} is requesting access to your Major League Soccer Fan 360 profile.",
+    "logoAltText": "Major League Soccer Fan 360"
+  }
+}
