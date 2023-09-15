@@ -1,0 +1,7 @@
+{
+  "login": {
+    "title": "Welcome",
+    "pageTitle": "Log in to ${clientName}",
+    "description": "Log in to ${companyName} to continue to ${clientName}."
+  }
+}

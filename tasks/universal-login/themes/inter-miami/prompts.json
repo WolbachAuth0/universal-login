@@ -1,0 +1,17 @@
+{
+  "login": {
+    "title": "Welcome",
+    "pageTitle": "Log in to ${clientName}",
+    "description": "Log in to ${companyName} to continue to ${clientName}."
+  },
+  "signup": {
+    "usernamePlaceholder": "Mobile #",
+    "invalid-username": "Mobile # can only contain alphanumeric characters or: '${characters}'. Mobile # should have between ${min} and ${max} characters.",
+    "invalid-username-max-length": "The mobile # must not be longer than ${max} characters.",
+    "invalid-username-min-length": "The mobile # must have at least ${min} characters.",
+    "invalid-username-invalid-characters": "The mobile # has invalid characters.",
+    "invalid-username-email-not-allowed": "The mobile # cannot be an email.",
+    "username-taken": "The mobile # provided is in use already.",
+    "no-username": "Mobile # is required"
+  }
+}

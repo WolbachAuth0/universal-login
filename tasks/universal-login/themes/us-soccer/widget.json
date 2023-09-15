@@ -1,22 +1,22 @@
 {
   "colors": {
-    "primary_button": "#be3233",
+    "primary_button": "#212844",
     "primary_button_label": "#ffffff",
-    "secondary_button_border": "#000000",
-    "secondary_button_label": "#000000",
-    "base_focus_color": "#1d87ff",
+    "secondary_button_border": "#212844",
+    "secondary_button_label": "#212844",
+    "base_focus_color": "#212844",
     "base_hover_color": "#000000",
-    "links_focused_components": "#1d87ff",
-    "header": "#000000",
-    "body_text": "#000000",
+    "links_focused_components": "#635dff",
+    "header": "#212844",
+    "body_text": "#212844",
     "widget_background": "#ffffff",
-    "widget_border": "#c9cace",
-    "input_labels_placeholders": "#65676e",
-    "input_filled_text": "#000000",
-    "input_border": "#000000",
+    "widget_border": "#212844",
+    "input_labels_placeholders": "#212844",
+    "input_filled_text": "#212844",
+    "input_border": "#212844",
     "input_background": "#ffffff",
-    "icons": "#000000",
-    "error": "#d03c38",
+    "icons": "#212844",
+    "error": "#c52035",
     "success": "#13a688"
   },
   "fonts": {
@@ -49,28 +49,28 @@
     "links_style": "normal"
   },
   "borders": {
-    "button_border_weight": 1,
+    "button_border_weight": 2,
     "buttons_style": "pill",
     "button_border_radius": 3,
     "input_border_weight": 1,
     "inputs_style": "pill",
     "input_border_radius": 3,
-    "widget_corner_radius": 30,
-    "widget_border_weight": 3,
+    "widget_corner_radius": 15,
+    "widget_border_weight": 2,
     "show_widget_shadow": true
   },
   "widget": {
     "logo_position": "center",
-    "logo_url": "https://raw.githubusercontent.com/WolbachAuth0/auth0-m2m-demo/main/public/mls.jpeg?raw=true",
-    "logo_height": 52,
+    "logo_url": "https://cdn.ussoccer.com/-/jssmedia/project/ussf/logos/ussf-logos/crest.ashx?la=en-US&rev=01ad607166054711925668219348ffc9&hash=7B9190646285FEC9020323B00181B83B",
+    "logo_height": 75,
     "header_text_alignment": "center",
     "social_buttons_layout": "bottom"
   },
   "page_background": {
-    "page_layout": "center",
-    "background_color": "#D1D1D1",
-    "background_image_url": "https://images.mlssoccer.com/image/private/t_editorial_landscape_12_desktop/f_auto/prd-league/jtsjzhffv0k3hucdtjaf.jpg"
+    "page_layout": "left",
+    "background_color": "#000000",
+    "background_image_url": "https://raw.githubusercontent.com/WolbachAuth0/image-repo/main/public/us-soccer-ul-bg.png?raw=true"
   },
-  "displayName": "Major League Soccer",
-  "themeId": "829PrHhEAb05mw6Og7BzbOF21QwMtIFh"
+  "displayName": "Unnamed Theme",
+  "themeId": "CBazjRMz2L6iQqxayZatgn6PlChTJUsF"
 }

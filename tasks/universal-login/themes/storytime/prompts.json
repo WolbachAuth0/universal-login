@@ -1,0 +1,8 @@
+{
+  "login": {
+    "description": "Log in to ${clientName} to continue."
+  },
+  "login-id": {
+    "description": "Log in to ${clientName} to continue."
+  }
+}

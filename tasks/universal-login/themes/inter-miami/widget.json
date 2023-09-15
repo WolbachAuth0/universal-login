@@ -1,0 +1,76 @@
+{
+  "colors": {
+    "primary_button": "#f3b5cd",
+    "primary_button_label": "#000000",
+    "secondary_button_border": "#f3b5cd",
+    "secondary_button_label": "#ffffff",
+    "base_focus_color": "#fd96bd",
+    "base_hover_color": "#ededed",
+    "links_focused_components": "#f3b5cd",
+    "header": "#ffffff",
+    "body_text": "#ffffff",
+    "widget_background": "#231f21",
+    "widget_border": "#ededed",
+    "input_labels_placeholders": "#000000",
+    "input_filled_text": "#ffffff",
+    "input_border": "#ffffff",
+    "input_background": "#888888",
+    "icons": "#000000",
+    "error": "#d03c38",
+    "success": "#13a688"
+  },
+  "fonts": {
+    "font_url": "",
+    "reference_text_size": 16,
+    "title": {
+      "bold": false,
+      "size": 150
+    },
+    "subtitle": {
+      "bold": false,
+      "size": 87.5
+    },
+    "body_text": {
+      "bold": false,
+      "size": 87.5
+    },
+    "buttons_text": {
+      "bold": false,
+      "size": 100
+    },
+    "input_labels": {
+      "bold": false,
+      "size": 100
+    },
+    "links": {
+      "bold": true,
+      "size": 87.5
+    },
+    "links_style": "normal"
+  },
+  "borders": {
+    "button_border_weight": 1,
+    "buttons_style": "pill",
+    "button_border_radius": 3,
+    "input_border_weight": 1,
+    "inputs_style": "pill",
+    "input_border_radius": 5,
+    "widget_corner_radius": 20,
+    "widget_border_weight": 4,
+    "show_widget_shadow": true
+  },
+  "widget": {
+    "logo_position": "center",
+    "logo_url": "https://images.mlssoccer.com/image/upload/assets/logos/MIA.svg",
+    "logo_height": 52,
+    "header_text_alignment": "center",
+    "social_buttons_layout": "bottom"
+  },
+  "page_background": {
+    "page_layout": "left",
+    "background_color": "#f2f2f2",
+    "background_image_url": "https://images.mlssoccer.com/image/private/t_editorial_landscape_12_desktop/f_png/mls-mia-prd/cme8kzvx7d7au3zxibrh.png"
+  },
+  "displayName": "Unnamed Theme",
+  "themeId": "SSKAx3hLL3hECzQGxyHWAOtpQR7Azucr"
+}
