@@ -1,23 +1,23 @@
 {
   "colors": {
-    "primary_button": "#191919",
+    "primary_button": "#18076e",
     "primary_button_label": "#ffffff",
-    "secondary_button_border": "#2910a8",
-    "secondary_button_label": "#191919",
+    "secondary_button_border": "#bfbfbf",
+    "secondary_button_label": "#190631",
     "base_focus_color": "#2910a8",
-    "base_hover_color": "#191919",
+    "base_hover_color": "#190631",
     "links_focused_components": "#2910a8",
-    "header": "#191919",
-    "body_text": "#191919",
-    "widget_background": "#E0E0E0",
-    "widget_border": "#616161",
-    "input_labels_placeholders": "#616161",
-    "input_filled_text": "#191919",
-    "input_border": "#616161",
+    "header": "#190631",
+    "body_text": "#190631",
+    "widget_background": "#ffffff",
+    "widget_border": "#c9cace",
+    "input_labels_placeholders": "#65676e",
+    "input_filled_text": "#190631",
+    "input_border": "#c9cace",
     "input_background": "#ffffff",
-    "icons": "#616161",
+    "icons": "#65676e",
     "error": "#d03c38",
-    "success": "#4CAF50"
+    "success": "#13a688"
   },
   "fonts": {
     "font_url": "",
@@ -53,7 +53,7 @@
     "buttons_style": "pill",
     "button_border_radius": 3,
     "input_border_weight": 1,
-    "inputs_style": "pill",
+    "inputs_style": "sharp",
     "input_border_radius": 6,
     "widget_corner_radius": 20,
     "widget_border_weight": 3,
@@ -61,16 +61,16 @@
   },
   "widget": {
     "logo_position": "center",
-    "logo_url": "https://raw.githubusercontent.com/WolbachAuth0/auth0-m2m-demo/main/public/api-icon.png",
-    "logo_height": 100,
+    "logo_url": "https://outcomesmtm.com/wp-content/uploads/2023/10/Outcomes-Logo-Full-Color-500px.png",
+    "logo_height": 59,
     "header_text_alignment": "center",
     "social_buttons_layout": "bottom"
   },
   "page_background": {
-    "page_layout": "left",
-    "background_color": "#000000",
-    "background_image_url": "https://images.squarespace-cdn.com/content/v1/57d9e959d482e972e8434364/1635861082044-08BJQX7SG4ABF95K497R/shutterstock_1080548216.jpg?format=2000w"
+    "page_layout": "center",
+    "background_color": "#FFFF",
+    "background_image_url": ""
   },
   "displayName": "Unnamed Theme",
-  "themeId": "pI3Y9QwYJ8U3tMnWXxJej0pAf2ZeiS4n"
+  "themeId": "gqlL5Fl4LAZo7H2eYV6c7zBG4XNWrI6m"
 }

@@ -1,0 +1,76 @@
+{
+  "colors": {
+    "primary_button": "#013e3f",
+    "primary_button_label": "#ffffff",
+    "secondary_button_border": "#013e3f",
+    "secondary_button_label": "#013e3f",
+    "base_focus_color": "#635dff",
+    "base_hover_color": "#013e3f",
+    "links_focused_components": "#635dff",
+    "header": "#013e3f",
+    "body_text": "#013e3f",
+    "widget_background": "#f9f7f3",
+    "widget_border": "#013e3f",
+    "input_labels_placeholders": "#013e3f",
+    "input_filled_text": "#000000",
+    "input_border": "#013e3f",
+    "input_background": "#ffffff",
+    "icons": "#013e3f",
+    "error": "#fdd345",
+    "success": "#13a688"
+  },
+  "fonts": {
+    "font_url": "",
+    "reference_text_size": 16,
+    "title": {
+      "bold": false,
+      "size": 150
+    },
+    "subtitle": {
+      "bold": false,
+      "size": 87.5
+    },
+    "body_text": {
+      "bold": false,
+      "size": 87.5
+    },
+    "buttons_text": {
+      "bold": false,
+      "size": 100
+    },
+    "input_labels": {
+      "bold": false,
+      "size": 100
+    },
+    "links": {
+      "bold": true,
+      "size": 87.5
+    },
+    "links_style": "normal"
+  },
+  "borders": {
+    "button_border_weight": 1,
+    "buttons_style": "pill",
+    "button_border_radius": 3,
+    "input_border_weight": 1,
+    "inputs_style": "pill",
+    "input_border_radius": 3,
+    "widget_corner_radius": 14,
+    "widget_border_weight": 4,
+    "show_widget_shadow": true
+  },
+  "widget": {
+    "logo_position": "center",
+    "logo_url": "https://raw.githubusercontent.com/WolbachAuth0/image-repo/main/public/industrius_logo.svg?raw=true",
+    "logo_height": 40,
+    "header_text_alignment": "center",
+    "social_buttons_layout": "bottom"
+  },
+  "page_background": {
+    "page_layout": "right",
+    "background_color": "#f9f7f3",
+    "background_image_url": "https://raw.githubusercontent.com/WolbachAuth0/image-repo/main/public/industrius_background.png?raw=true"
+  },
+  "displayName": "Unnamed Theme",
+  "themeId": "5dwcoyomlgeOnQID70XNVvaKXfgvBSTX"
+}

@@ -1,0 +1,11 @@
+{
+  "login": {
+    "title": "Find a workspace anywhere you go",
+    "pageTitle": "Log in to ${clientName}",
+    "description": "Login or Sign Up to to make reservations for coworking and meeting spaces."
+  },
+  "login-id": {
+    "title": "Find a workplace anywhere you go",
+    "description": "Login or Sign Up to to make reservations for coworking and meeting spaces."
+  }
+}
