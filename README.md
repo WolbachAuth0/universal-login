@@ -32,7 +32,7 @@ Make a note of the CLIENT_ID and CLIENT_SECRET for this M2M application.
 
 ## Environment Variables
 
-To run this project, you need to set up a seperate environment file (`.env`) for each tenant you want this project
+To run this project, you need to set up a separate environment file (`.env`) for each tenant you want this project
 to talk to. For each tenant, create a folder in the `./tenants` directory and give that folder the same name as your tenant.
 Then, in the tenant folder create a new file called `.env`.
 
