@@ -11,7 +11,7 @@ This repository contains a collection of scripts which intended to manage custom
 
 ```bash
 git clone https://github.com/WolbachAuth0/universal-login.git
-cd se-corp-na-samples
+cd universal-login
 ```
 
 2. Install dependencies with npm
